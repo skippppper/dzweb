@@ -2,6 +2,11 @@
     box-sizing: border-box;
 }
 
+.glav {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
 body {
     background-image: url(29533b694128fc02082a5314ac96ec0e.jpg);
     margin: 0;
@@ -9,6 +14,7 @@ body {
 }
 
 header.navbar.navbar-expand-lg.navbar-dark {
+    order: 3;
     background-color: rgb(73, 73, 73);
     -webkit-box-shadow: 0px 20px 30px 20px #676869a1;
     -moz-box-shadow: 0px 20px 30px 20px #676869a1;
@@ -24,6 +30,7 @@ em {
 }
 
 div.wrap.lh-lg.font-monospace {
+    order: 1;
     padding: 10px;
     margin: 70px 25px;
     border-radius: 10px;
@@ -58,6 +65,7 @@ div.wrap1.lh-lg.font-monospace {
 }
 
 div.wrap2.lh-lg.font-monospace {
+    order: 1;
     padding: 10px;
     margin: 70px 25px;
     border-radius: 10px;
@@ -150,6 +158,7 @@ tr:nth-child(1) {
 
 @media screen and (min-width: 415px) {
     div.wrap.lh-lg.font-monospace {
+        order: 2;
         padding: 50px;
         margin: 70px 450px;
         width: 800px;
@@ -158,6 +167,7 @@ tr:nth-child(1) {
     }
 
     div.wrap1.lh-lg.font-monospace {
+        order: 1;
         padding: 50px;
         margin: 70px 450px;
         width: 800px;
@@ -166,6 +176,7 @@ tr:nth-child(1) {
     }
 
     div.wrap2.lh-lg.font-monospace {
+        order: -1;
         padding: 50px;
         margin: 70px 450px;
         width: 800px;
@@ -174,6 +185,7 @@ tr:nth-child(1) {
     }
 
     div.wrap3.lh-lg.font-monospace {
+
         padding: 50px;
         margin: 70px 450px;
         width: 800px;
@@ -182,6 +194,7 @@ tr:nth-child(1) {
     }
 
     div.wrap4.lh-lg.font-monospace {
+
         padding: 50px;
         margin: 70px 450px;
         width: 800px;
